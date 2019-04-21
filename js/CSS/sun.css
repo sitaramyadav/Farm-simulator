@@ -1,0 +1,20 @@
+.sunny {
+    height: 140px;
+    width: 20px;
+    margin-left: -15px;
+    position: absolute;
+    left: 300px;
+    top: 100px;
+}
+
+.sunny:after {
+    background: #FFEE44;
+    border-radius: 50%;
+    box-shadow: rgba(255, 255, 0, 0.2) 0 0 0 15px;
+    content: '';
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    left: -30px;
+    top: 30px;
+}
