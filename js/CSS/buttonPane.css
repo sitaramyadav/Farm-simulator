@@ -1,4 +1,5 @@
 .Button-pane {
     background: rebeccapurple;
     width: 10%;
+    z-index: 2;
 }

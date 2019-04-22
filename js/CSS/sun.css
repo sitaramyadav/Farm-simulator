@@ -1,10 +1,9 @@
 .sunny {
     height: 140px;
     width: 20px;
-    margin-left: -15px;
     position: absolute;
-    left: 300px;
-    top: 100px;
+    left: 100px;
+    top: 40px;
 }
 
 .sunny:after {
@@ -15,6 +14,5 @@
     height: 120px;
     width: 120px;
     position: absolute;
-    left: -30px;
     top: 30px;
 }
