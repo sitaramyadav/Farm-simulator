@@ -4,14 +4,34 @@ import {MainWindow} from "./MainWindow";
 import {ButtonPane} from "./ButtonPane";
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-          <MainWindow/>
-          <ButtonPane/>
-      </div>
-    );
-  }
+    constructor(props) {
+        super(props)
+        this.state = {
+            day: true,
+            cloudy: false
+        }
+        this.update=this.update.bind(this)
+    }
+
+    update(property, value) {
+        this.setState(()=>{
+            return {
+                [property]: value
+            }
+        })
+    }
+
+    render() {
+        return (
+            <div className="App">
+                <MainWindow day={this.state.day}/>
+                <ButtonPane update={this.update}/>
+            </div>
+        );
+    }
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log(this.state)
+    }
 }
 
 export default App;

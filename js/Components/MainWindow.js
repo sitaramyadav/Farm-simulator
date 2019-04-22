@@ -10,13 +10,13 @@ import {Sun} from "./Sun";
 export class MainWindow extends Component {
     render() {
         return <div className="Main-window ">
-            <Sky/>
+            <Sky day={this.props.day}/>
             <Sun/>
             <Farm/>
             <Grass />
             {/*<Sun/>*/}
-            <Moon/>
-            <Stars/>
+            <Moon visible={!this.props.day}/>
+            <Stars visible={!this.props.day}/>
         </div>;
     }
 }

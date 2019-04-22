@@ -3,9 +3,9 @@ import '../CSS/stars.css';
 
 export class Stars extends Component {
     render() {
-        return <div>
+        return this.props.visible ? <div>
             <div className="stars"></div>
             <div className="twinkling"></div>
-        </div>
+        </div> : null
     }
 }
