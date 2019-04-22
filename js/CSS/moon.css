@@ -1,0 +1,12 @@
+.moon{
+
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-color: transparent;
+    box-shadow: -20px 20px 0 15px white;
+    border-radius: 50%;
+    top: 100px;
+    left: 800px;
+    z-index: 2;
+}
