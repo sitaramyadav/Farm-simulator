@@ -1,23 +1,6 @@
 import React, {Component} from 'react';
+import {Blade} from './Blade';
 import "../CSS/Grass";
-
-var numberOfBlades = 400;
-
-function getStyle(keyForElement) {
-  var randomHeight =  Math.floor(Math.random() * 150);
-  var randomLeft = Math.floor(Math.random() * (window.innerWidth - 180));
-  var randomRotation = Math.floor(Math.random() * 10) - 5;
-  return {
-      style: {
-          height: (randomHeight + 100) + 'px',
-          zIndex: randomHeight,
-          opacity: randomHeight * 0.02,
-          left: randomLeft +'px',
-          transform: 'rotate(' + randomRotation + 'deg)'
-      },
-      key: keyForElement
-  }
-}
 
 export class Grass extends Component {
     constructor(props){
@@ -28,9 +11,9 @@ export class Grass extends Component {
     }
 
     createGrass() {
+        var numberOfBlades = 400;
         for (var i = 0; i < numberOfBlades; i++) {
-            var style = getStyle(i);
-            var blade = React.createElement("div",style);
+            var blade = <Blade key={i}/>;
             this.state.blades.push(blade);
           }
     }
