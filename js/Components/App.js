@@ -8,7 +8,8 @@ class App extends Component {
         super(props)
         this.state = {
             day: true,
-            cloudy: false
+            cloudy: false,
+            drySoil:true
         }
         this.update=this.update.bind(this)
     }
@@ -24,10 +25,14 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <MainWindow day={this.state.day}/>
+                <MainWindow state={this.state}/>
                 <ButtonPane update={this.update}/>
             </div>
         );
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log(this.state)
     }
 }
 

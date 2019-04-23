@@ -17,12 +17,12 @@ export class Button extends React.Component {
                 toggle: !prevState.toggle
             }
         })
-        this.props.update('day', this.state.toggle)
+        this.props.update(this.props.name, this.state.toggle)
     }
 
 
     render() {
-        return <button onClick={this.updateButtonState} className="Button"></button>;
+        return <button onClick={this.updateButtonState} className="Button">{this.props.name}</button>;
     }
 
 }

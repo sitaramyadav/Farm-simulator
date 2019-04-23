@@ -13,7 +13,8 @@ export class ButtonPane extends Component {
 
     render() {
         return <div className="Button-pane">
-            <Button update={this.props.update}/>
+            <Button name='day' update={this.props.update}/>
+            <Button name='drySoil' update={this.props.update}/>
         </div>
     }
 }

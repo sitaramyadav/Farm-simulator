@@ -1,18 +1,56 @@
-.sunny {
-    height: 140px;
-    width: 20px;
-    position: absolute;
-    left: 100px;
-    top: 40px;
+.sun-in {
+     height: 120px;
+     width: 120px;
+     position: absolute;
+     left: 50%;
+     top: 5%;
+     background: #FFEE44;
+     position: absolute;
+     border-radius: 50%;
+     box-shadow: rgba(255, 255, 0, 0.2) 0 0 0 15px;
+     animation-name: move-sun-in;
+     animation-duration: 4s;
+     animation-delay: 3ms;
+     animation-iteration-count: 1;
+     animation-timing-function: linear;
+ }
+
+@keyframes move-sun-in {
+    from {
+        left: 0%;
+        top: 50%;
+    }
+    to {
+        left: 50%;
+        top: 5%;
+    }
 }
 
-.sunny:after {
-    background: #FFEE44;
-    border-radius: 50%;
-    box-shadow: rgba(255, 255, 0, 0.2) 0 0 0 15px;
-    content: '';
-    height: 120px;
-    width: 120px;
+
+.moon-out{
+    z-index: 0;
+    height: 100px;
+    width: 100px;
     position: absolute;
-    top: 30px;
+    background-color: transparent;
+    box-shadow: -20px 20px 0 15px white;
+    border-radius: 50%;
+    z-index: 0;
+    animation-name: move-moon-out;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+
 }
+
+@keyframes move-moon-out {
+    from{
+        left: 50%;
+        top: 5%;
+    }
+    to{
+        left: 100%;
+        top: 100%;
+    }
+
+}
+

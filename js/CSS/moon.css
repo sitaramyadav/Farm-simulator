@@ -1,4 +1,4 @@
-.moon{
+.moon-in{
 
     height: 100px;
     width: 100px;
@@ -6,7 +6,53 @@
     background-color: transparent;
     box-shadow: -20px 20px 0 15px white;
     border-radius: 50%;
-    top: 100px;
-    left: 800px;
-    z-index: 2;
+    top: 5%;
+    left: 50%;
+    z-index: 0;
+    animation-name: move-moon-in;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+
+}
+
+@keyframes move-moon-in {
+    from{
+        left: 0%;
+        top: 50%;
+    }
+    to{
+        left: 50%;
+        top: 5%;
+    }
+
+}
+
+
+
+
+
+.sun-off {
+    z-index: 0;
+    height: 120px;
+    width: 120px;
+    background: #FFEE44;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: rgba(255, 255, 0, 0.2) 0 0 0 15px;
+    animation-name: move-sun-out;
+    animation-duration: 4s;
+    animation-delay: 3ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes move-sun-out {
+    from {
+        left: 50%;
+        top: 5%;
+    }
+    to {
+        left: 100%;
+        top: 100%;
+    }
 }

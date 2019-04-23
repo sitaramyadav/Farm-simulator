@@ -3,7 +3,7 @@
     background-color:#0b0;
     border-right:solid 5px #0c0;
     border-top-right-radius:100%;
-    bottom:0;
+    bottom:20%;
     position:absolute;
     transform-origin:bottom;
     transition:all 100ms ease-in-out;
