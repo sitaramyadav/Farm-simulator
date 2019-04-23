@@ -29,9 +29,6 @@ class App extends Component {
             </div>
         );
     }
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        console.log(this.state)
-    }
 }
 
 export default App;

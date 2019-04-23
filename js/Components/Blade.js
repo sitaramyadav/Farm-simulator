@@ -7,18 +7,16 @@ export class Blade extends Component {
         var randomLeft = Math.floor(Math.random() * (window.innerWidth - 180));
         var randomRotation = Math.floor(Math.random() * 10) - 5;
         return {
-            className: "blade",
-            style: {
                 height: (randomHeight + 100) + 'px',
                 zIndex: randomHeight,
                 opacity: randomHeight * 0.02,
                 left: randomLeft +'px',
                 transform: 'rotate(' + randomRotation + 'deg)'
-            }
         }
     }
 
     render(){
-        return React.createElement("div",this.getStyle());
+        let style = this.getStyle();
+        return <div style={style} className="blade"></div>
     }
 }

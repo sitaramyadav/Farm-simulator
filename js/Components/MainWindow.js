@@ -14,7 +14,6 @@ export class MainWindow extends Component {
             <Sun/>
             <Farm/>
             <Grass />
-            {/*<Sun/>*/}
             <Moon visible={!this.props.day}/>
             <Stars visible={!this.props.day}/>
         </div>;

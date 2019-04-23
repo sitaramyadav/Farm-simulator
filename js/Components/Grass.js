@@ -13,13 +13,13 @@ export class Grass extends Component {
     createGrass() {
         var numberOfBlades = 400;
         for (var i = 0; i < numberOfBlades; i++) {
-            var blade = <Blade key={i}/>;
+            var blade = <Blade key={i.toString()}/>;
             this.state.blades.push(blade);
           }
     }
 
     render(){
-        this.createGrass();
+        if(this.state.blades.length == 0) this.createGrass();
         return <div className="grass">{
             this.state.blades.map((blade)=> blade)
         } </div>;
