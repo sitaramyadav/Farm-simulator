@@ -6,22 +6,14 @@ export class Grass extends Component {
     constructor(props){
         super(props);
         this.state = {
-            blades: []
+            blades: [...Array(400).keys()]
         }
     }
-
-    createGrass() {
-        var numberOfBlades = 400;
-        for (var i = 0; i < numberOfBlades; i++) {
-            var blade = <Blade key={i.toString()}/>;
-            this.state.blades.push(blade);
-          }
-    }
-
     render(){
-        if(this.state.blades.length == 0) this.createGrass();
         return <div className="grass">{
-            this.state.blades.map((blade)=> blade)
+            this.state.blades.map(count =>{
+                return <Blade key={count.toString()}/>
+            })
         } </div>;
     }
 };
