@@ -1,0 +1,27 @@
+.pump-water{
+    position: absolute;
+    width: 2%;
+    height: 14%;
+    z-index: 300;
+    background: rgba(118, 178, 219, 0.82) linear-gradient(0deg,
+    rgba(118, 178, 219, 0.82) 25%,
+    rgba(80,155,201,0.82) 25%,
+    rgba(80,155,201,0.82) 25%,
+    rgba(80,155,201,0.82) 50%,
+    rgba(118, 178, 219, 0.82) 50%,
+    rgba(118, 178, 219, 0.82) 50%,
+    rgba(118, 178, 219, 0.82) 75%,
+    rgba(80,155,201,0.82) 75%);
+    box-shadow: 13px 0 4px 0 rgba(0,0,0,0.2) inset;
+    opacity: 80%;
+    bottom: 20%;
+    right: 24%;
+    animation: waterDrop 30s linear infinite;
+    transform: rotate(180deg);
+}
+
+@keyframes waterDrop {
+    to {
+        background-position: 0 -1000vh;
+    }
+}

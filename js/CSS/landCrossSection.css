@@ -1,0 +1,9 @@
+.land-cross-section{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 77%;
+    height: 15%;
+    background-image: radial-gradient(circle, #cca476, #bb946d, #a98563, #98765a, #866851);
+    z-index: 151;
+}

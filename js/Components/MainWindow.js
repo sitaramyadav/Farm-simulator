@@ -9,7 +9,9 @@ import {Clouds} from "./Clouds";
 import {Ground} from "./Ground";
 import {Well} from "./Well";
 import {SoilHeap} from "./SoilHeap";
-import {WaterWaves} from "./WaterWaves";
+import {LandCrossSection} from "./LandCrossSection";
+import {WaterPump} from "./WaterPump";
+import {PumpWater} from "./PumpWater";
 
 export class MainWindow extends Component {
 
@@ -18,7 +20,7 @@ export class MainWindow extends Component {
     }
 
     render() {
-        let {day, drySoil, waterLevel} = this.props.state
+        let {day, drySoil, waterLevel,waterPump} = this.props.state
         return <div className="Main-window ">
             <Clouds day={day}/>
             <Sky day={day}/>
@@ -29,7 +31,9 @@ export class MainWindow extends Component {
             <Ground drySoil={drySoil} />
             <Well waterLevel={waterLevel}/>
             <SoilHeap/>
-            {/*<WaterWaves/>*/}
+            <LandCrossSection/>
+            <WaterPump />
+            <PumpWater isOn={waterPump}/>
         </div>;
     }
 }

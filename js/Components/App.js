@@ -10,7 +10,8 @@ class App extends Component {
             day: true,
             cloudy: false,
             drySoil:true,
-            waterLevel:80
+            waterLevel:50,
+            waterPump: false
         }
         this.update=this.update.bind(this)
     }
