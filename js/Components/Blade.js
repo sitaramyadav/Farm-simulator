@@ -4,7 +4,7 @@ import "../CSS/Blade"
 export class Blade extends Component {
     getStyle() {
         var randomHeight =  Math.floor(Math.random() * 150);
-        var randomLeft = Math.floor(Math.random() * (window.innerWidth - 180));
+        var randomLeft = Math.floor(Math.random() * (window.innerWidth - 400));
         var randomRotation = Math.floor(Math.random() * 10) - 5;
         return {
                 height: (randomHeight + 100) + 'px',

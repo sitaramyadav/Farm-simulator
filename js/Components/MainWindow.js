@@ -7,6 +7,9 @@ import {Moon} from "./Moon";
 import {Sun} from "./Sun";
 import {Clouds} from "./Clouds";
 import {Ground} from "./Ground";
+import {Well} from "./Well";
+import {SoilHeap} from "./SoilHeap";
+import {WaterWaves} from "./WaterWaves";
 
 export class MainWindow extends Component {
 
@@ -15,7 +18,7 @@ export class MainWindow extends Component {
     }
 
     render() {
-        let {day, drySoil} = this.props.state
+        let {day, drySoil, waterLevel} = this.props.state
         return <div className="Main-window ">
             <Clouds day={day}/>
             <Sky day={day}/>
@@ -24,6 +27,9 @@ export class MainWindow extends Component {
             <Grass />
             <Moon visible={!day}/>
             <Ground drySoil={drySoil} />
+            <Well waterLevel={waterLevel}/>
+            <SoilHeap/>
+            {/*<WaterWaves/>*/}
         </div>;
     }
 }

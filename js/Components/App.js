@@ -9,7 +9,8 @@ class App extends Component {
         this.state = {
             day: true,
             cloudy: false,
-            drySoil:true
+            drySoil:true,
+            waterLevel:80
         }
         this.update=this.update.bind(this)
     }
