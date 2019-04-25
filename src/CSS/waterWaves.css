@@ -1,0 +1,135 @@
+.waves div {
+    height: 57%;
+    width: 30%;
+    /*background-color: rgba(117,172,209,0.82);*/
+    bottom: 46%;
+    position: absolute;
+    z-index: 1;
+    opacity: 50%;
+
+    box-sizing: content-box;
+    border: none;
+    border-top-width: 1px;
+    border-radius: 50% 50% 0 0;
+
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+
+    text-overflow: ellipsis;
+    background: rgba(117, 172, 209, 0.82);
+}
+
+.wave-1 {
+    right: 85%;
+    animation: create-wave-1 1.5s ease alternate;
+    /*animation-iteration-count: infinite;*/
+}
+
+.wave-2 {
+    right: 70%;
+    animation: create-wave-2 1.5s ease alternate;
+    animation-iteration-count: infinite;
+}
+
+.wave-3 {
+    right: 55%;
+    animation: create-wave-3 1.5s ease alternate;
+    animation-iteration-count: infinite;
+}
+
+.wave-4 {
+    right: 40%;
+    animation: create-wave-4 1.5s ease alternate;
+    animation-iteration-count: infinite;
+}
+
+.wave-5 {
+    right: 25%;
+    animation: create-wave-5 1.5s ease alternate;
+    animation-iteration-count: infinite;
+}
+.wave-6 {
+    right: 10%;
+    animation: create-wave-6 1.5s ease alternate;
+    animation-iteration-count: infinite;
+}
+.wave-7 {
+    right: -5%;
+    animation: create-wave-7 1.5s ease alternate;
+    animation-iteration-count: infinite;
+}
+.wave-8 {
+    right: -20%;
+    animation: create-wave-8 1.5s ease alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes create-wave-1 {
+    from {
+        right: 85%;
+    }
+    to {
+        right: 86%;
+    }
+}
+
+@keyframes create-wave-2 {
+    from {
+        right: 70%;
+    }
+    to {
+        right: 85%;
+    }
+}
+
+@keyframes create-wave-3 {
+    from {
+        right: 55%;
+    }
+    to {
+        right: 70%;
+    }
+}
+
+
+@keyframes create-wave-4 {
+    from {
+        right: 40%;
+    }
+    to {
+        right: 55%;
+    }
+}
+
+@keyframes create-wave-5 {
+    from {
+        right: 25%;
+    }
+    to {
+        right: 40%;
+    }
+}
+@keyframes create-wave-6 {
+    from {
+        right: 10%;
+    }
+    to {
+        right: 25%;
+    }
+}
+@keyframes create-wave-7 {
+    from {
+        right: -5%;
+    }
+    to {
+        right: 10%;
+    }
+}
+@keyframes create-wave-8 {
+    from {
+        right: -20%;
+    }
+    to {
+        right: -5%;
+    }
+}
