@@ -10,7 +10,6 @@ export class Stars extends Component {
     componentWillMount() {
         let that = this;
         setTimeout(function() {
-            console.log("wait over")
             that.show();
         }, that.props.wait);
     }

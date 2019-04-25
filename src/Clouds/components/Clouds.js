@@ -13,7 +13,6 @@ export class Clouds extends Component {
         <div className="cloud cloud3"/>
         <div className="cloud cloud4"/>
         <div className="cloud cloud5"/>
-        <h1> Inside clouds </h1>
     </div> : null
     };
 }

@@ -18,30 +18,22 @@ export class MainWindow extends Component {
 
     constructor(props) {
         super(props);
-        console.log("Props inside main window", props);
-
-        this.state = {
-            day: this.props.day,
-            drySoil: this.props.drySoil,
-            waterLevel: this.props.waterLevel,
-            waterPump: this.props.waterPump
-        };
     }
 
     render() {
         return <div className="Main-window ">
-            <Clouds day={this.state.day}/>
-            <Sky day={this.state.day}/>
-            <Sun day={this.state.day}/>
+            <Clouds day={this.props.values.day}/>
+            <Sky day={this.props.values.day}/>
+            <Sun day={this.props.values.day}/>
             <Farm/>
             <Grass />
-            <Moon visible={!this.state.day}/>
-            <Ground drySoil={this.state.drySoil} />
-            <Well waterLevel={this.state.waterLevel}/>
+            <Moon visible={!this.props.values.day}/>
+            <Ground drySoil={this.props.values.drySoil} />
+            <Well waterLevel={this.props.values.waterLevel}/>
             <SoilHeap/>
             <LandCrossSection/>
             <WaterPump />
-            <PumpWater isOn={this.state.waterPump}/>
+            <PumpWater isOn={this.props.values.waterPump}/>
         </div>;
     }
 }

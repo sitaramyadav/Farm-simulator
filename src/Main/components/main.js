@@ -29,8 +29,8 @@ export default class Main extends React.Component {
 
     render() {
         return (
-            <div>
-                <MainWindow props={this.state}/>
+            <div className='App'>
+                <MainWindow values={this.state}/>
                 <ButtonPane update={this.update}/>
             </div>
         );
