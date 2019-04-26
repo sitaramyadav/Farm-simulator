@@ -7,7 +7,6 @@ export class ButtonPane extends Component {
         super(props);
         this.state = {
             value: true
-
         }
     }
 
@@ -16,6 +15,7 @@ export class ButtonPane extends Component {
             <Button name='day' update={this.props.update}/>
             <Button name='drySoil' update={this.props.update}/>
             <Button name='waterPump' update={this.props.update}/>
+            <Button name='cloudy' update={this.props.update}/>
         </div>
     }
 }
