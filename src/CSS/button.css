@@ -1,4 +1,12 @@
-.button{
-    height: 50px;
-    width: 50px;
+button{
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.controls {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px;
 }

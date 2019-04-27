@@ -14,12 +14,7 @@ module.exports = ( env, options ) => {
             rules: [
                 {
                     test: /\.jsx$|\.es6$|\.js$/,
-                    use: {
-                        loader: 'babel-loader',
-                        options: {
-                            presets: ['react'],
-                        }
-                    },
+                    use: 'babel-loader',
                     exclude: /(node_modules|bower_components)/
                 },
                 {
@@ -29,7 +24,8 @@ module.exports = ( env, options ) => {
             ]
         },
 
-        watch: true
+        watch: true,
+        devtool: "source-map"
     }
 };
 

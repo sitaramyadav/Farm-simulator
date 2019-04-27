@@ -4,26 +4,30 @@ import '../../CSS/button.css';
 export class Button extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            toggle: true
-
-        };
-        this.updateButtonState =this.updateButtonState.bind(this);
+        this.handleDayNightToggleClick = this.handleDayNightToggleClick.bind(this);
+        this.handleSoilToggleClick = this.handleSoilToggleClick.bind(this);
+        this.handleWaterPumpToggleClick = this.handleWaterPumpToggleClick.bind(this);
     }
 
-    updateButtonState() {
-        this.setState((prevState) => {
-            return {
-                toggle: !prevState.toggle
-            }
-        });
-
-        this.props.update(this.props.name, this.state.toggle)
+    handleDayNightToggleClick() {
+        this.props.onDayNightToggle();
     }
 
+    handleSoilToggleClick() {
+        this.props.onSoilToggle();
+    }
+
+    handleWaterPumpToggleClick() {
+        this.props.onWaterPumpToggle();
+    }
 
     render() {
-        return <button onClick={this.updateButtonState} className="Button">{this.props.name}</button>;
+        return (
+            <div className="controls">
+                <button onClick={this.handleDayNightToggleClick} className="control day_night"> Day_Night</button>
+                <button onClick={this.handleSoilToggleClick} className="control dry_wet_soil"> Dry_Wet_Soil</button>
+                <button onClick={this.handleWaterPumpToggleClick} className="control water_pump"> Water_Pump</button>
+            </div>
+        )
     }
-
 }

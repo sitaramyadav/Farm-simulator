@@ -2,14 +2,11 @@ import {connect} from "react-redux";
 import Main from '../components/main';
 
 const mapStateToProps = (state) => {
-    return {
-        state: state
-    }
+    return {}
 };
 
 const mapDispatchToProps = (dispatch) => {
-    return {
-    }
+    return {}
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Main);

@@ -1,7 +1,6 @@
 import {combineReducers} from 'redux-loop';
-import login from './Main/reducers/index';
-
+import main from './Main/reducers/index';
 
 export default combineReducers({
-    login,
+    main
 });

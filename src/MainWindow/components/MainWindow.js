@@ -14,7 +14,7 @@ import {PumpWater} from "../../PumpWater/components/PumpWater";
 import '../../CSS/mainWindow.css';
 
 
-export class MainWindow extends Component {
+export default class MainWindow extends Component {
 
     constructor(props) {
         super(props);
@@ -22,18 +22,18 @@ export class MainWindow extends Component {
 
     render() {
         return <div className="Main-window ">
-            <Clouds day={this.props.values.day}/>
-            <Sky day={this.props.values.day}/>
-            <Sun day={this.props.values.day}/>
+            <Clouds day={this.props.day}/>
+            <Sky day={this.props.day}/>
+            <Sun day={this.props.day}/>
             <Farm/>
-            <Grass />
-            <Moon visible={!this.props.values.day}/>
-            <Ground drySoil={this.props.values.drySoil} />
-            <Well waterLevel={this.props.values.waterLevel}/>
+            <Grass/>
+            <Moon visible={!this.props.day}/>
+            <Ground drySoil={this.props.drySoil}/>
+            <Well waterLevel={this.props.waterLevel}/>
             <SoilHeap/>
             <LandCrossSection/>
-            <WaterPump />
-            <PumpWater isOn={this.props.values.waterPump}/>
+            <WaterPump/>
+            <PumpWater isOn={this.props.waterPump}/>
         </div>;
     }
 }
