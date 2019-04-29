@@ -16,7 +16,7 @@ export class Button extends React.Component {
     }
 
     render() {
-        return <button onClick={this.updateButtonState} className={this.props.toggle ? "button-on" : "button-off"}>{this.props.name}</button>;
+        return <button onClick={this.updateButtonState} className={this.props.toggle ? "button-on" : "button-off"}>{this.props.text}</button>;
     }
 
 }

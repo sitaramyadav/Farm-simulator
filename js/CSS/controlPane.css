@@ -1,9 +1,9 @@
 .control-pane {
     background: lightslategrey;
     position: absolute;
-    margin-left: 85%;
+    margin-left: 84%;
     margin-top: 10px;
-    width: 10%;
+    width: 14%;
     z-index: 10;
     padding: 10px;
     border-radius: 5%;
@@ -13,9 +13,10 @@
 
 .button-on, .button-off {
     color: black;
-    height: 30px;
+    height: 20px;
+    width: 25%;
     border: 1px solid whitesmoke;
-    border-radius: 40%;
+    border-radius: 12%;
     outline: none;
 }
 .button-on::after, .button-off::after {
@@ -49,8 +50,27 @@ ul {
 
 .key{
     display: inline-block;
-    width: 90px;
+    width: 50%;
 }
 .value{
     margin-left: 10%
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    color: #778799;
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+.pump-switch {
+    display: inline;
+    float:right;
+    margin-bottom: 1px;
+    /* margin-left: 10px; */
 }
