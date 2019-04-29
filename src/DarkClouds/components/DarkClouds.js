@@ -4,7 +4,6 @@ import "../../CSS/darkClouds.css";
 export class DarkCloud extends Component {
     constructor(props){
         super(props);
-        console.log("Props inside dark clouds component ", props);
     }
     render() {
         return this.props.cloudy ? <div className="dark-clouds">

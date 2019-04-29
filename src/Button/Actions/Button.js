@@ -25,7 +25,6 @@ export const changeWaterPumpMode = () => {
 };
 
 export const changeCloudyMode = () => {
-    console.log("Action triggered");
     return {
         type: CHANGE_CLOUDY_MODE,
         payload: {}

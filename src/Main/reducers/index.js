@@ -25,7 +25,6 @@ export default (state = {
             return {...state, waterPump: !state.waterPump};
 
         case CHANGE_CLOUDY_MODE:
-            console.log("Inside reducer ", state);
             return {...state, cloudy: !state.cloudy};
 
         default:
