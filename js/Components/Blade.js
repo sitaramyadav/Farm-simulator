@@ -14,7 +14,6 @@ export class Blade extends Component {
                 transform: 'rotate(' + randomRotation + 'deg)'
         }
     }
-
     render(){
         let style = this.getStyle();
         return <div style={style} className="blade"></div>

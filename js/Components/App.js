@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './../CSS/App.css';
 import {MainWindow} from "./MainWindow";
-import {ButtonPane} from "./ButtonPane";
+import {ControlPane} from "./ControlPane";
 import axios from "axios";
 
 class App extends Component {
@@ -37,7 +37,7 @@ class App extends Component {
     }
 
     poll() {
-        axios.get(window.location.href+'stats')
+        axios.get('http://localhost:5000/'+'stats')
             .then(this.updateState)
             .catch(function (error) {
                 console.log(error);
@@ -57,13 +57,9 @@ class App extends Component {
         return (
             <div className="App">
                 <MainWindow state={this.state}/>
-                <ButtonPane update={this.update}/>
+                <ControlPane update={this.update} state={this.state}/>
             </div>
         );
-    }
-
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        console.log("updated",this.state)
     }
 }
 

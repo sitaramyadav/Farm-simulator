@@ -21,7 +21,7 @@ export class MainWindow extends Component {
     }
 
     render() {
-        let {day, drySoil, waterLevel,waterPump, cloudy} = this.props.state
+        let {day, moisture, waterlevel, pump, cloudy} = this.props.state
         return <div className="Main-window ">
             <Clouds day={day} cloudy={cloudy}/>
             <Sky day={day} cloudy={cloudy}/>
@@ -29,12 +29,12 @@ export class MainWindow extends Component {
             <Farm/>
             <Grass />
             <Moon visible={!day}/>
-            <Ground drySoil={drySoil} />
-            <Well waterLevel={waterLevel}/>
+            <Ground moisture={moisture} />
+            <Well waterlevel={waterlevel}/>
             <SoilHeap/>
             <LandCrossSection/>
             <WaterPump />
-            <PumpWater isOn={waterPump}/>
+            <PumpWater isOn={pump}/>
             <DarkCloud cloudy={cloudy}/>
         </div>;
     }

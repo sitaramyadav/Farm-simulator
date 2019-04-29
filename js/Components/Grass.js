@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import {Blade} from './Blade';
 import "../CSS/Grass";
 
-export class Grass extends Component {
+export class Grass extends PureComponent {
     constructor(props){
         super(props);
         this.state = {
@@ -12,7 +12,7 @@ export class Grass extends Component {
     render(){
         return <div className="grass">{
             this.state.blades.map(count =>{
-                return <Blade key={count.toString()}/>
+                return <Blade key={count}/>
             })
         } </div>;
     }

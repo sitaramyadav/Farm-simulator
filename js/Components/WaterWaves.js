@@ -1,7 +1,7 @@
-import React, {Component} from "react";
+import React, {PureComponent} from "react";
 import '../CSS/waterWaves.css';
 
-export class WaterWaves extends Component {
+export class WaterWaves extends PureComponent {
     render() {
         return <div className="waves" >
             <div className="wave-1"></div>

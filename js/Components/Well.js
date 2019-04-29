@@ -4,9 +4,8 @@ import {WaterWaves} from "./WaterWaves";
 
 export class Well extends Component {
     render(){
-        console.log(this.props.waterLevel)
         return <div className="well">
-            <div className="well-water" style={{height:`${this.props.waterLevel}%`}}>
+            <div className="well-water" style={{height:`${this.props.waterlevel}%`}}>
                 <WaterWaves/>
             </div>
         </div>;

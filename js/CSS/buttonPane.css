@@ -1,6 +1,56 @@
-.Button-pane {
-    background: transparent;
+.control-pane {
+    background: lightslategrey;
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 10px;
     width: 10%;
-    height: 948px;
     z-index: 10;
+    padding: 10px;
+    border-radius: 5%;
+    text-align: left;
+
+}
+
+.button-on, .button-off {
+    color: black;
+    height: 30px;
+    border: 1px solid whitesmoke;
+    border-radius: 40%;
+    outline: none;
+}
+.button-on::after, .button-off::after {
+    content: "";
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+    display: inline-block;
+    
+}
+
+.button-on::after {
+    background: green
+}
+
+.button-off::after {
+    background: red
+}
+ul {
+    
+    padding: 2px;
+    list-style-type: none;
+  }
+  
+  ul li {
+    color: white;
+    margin: 5px 1px 10px 0;
+    font-family: monospace;
+  }
+
+.key{
+    display: inline-block;
+    width: 100px;
+}
+.value{
+    margin-left: 10%
 }
