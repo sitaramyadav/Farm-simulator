@@ -12,6 +12,7 @@ import {LandCrossSection} from "../../LandCrossSection/components/LandCrossSecti
 import {WaterPump} from "../../WaterPump/components/WaterPump";
 import {PumpWater} from "../../PumpWater/components/PumpWater";
 import '../../CSS/mainWindow.css';
+import {DarkCloud} from "../../DarkClouds/components/DarkClouds";
 
 
 export default class MainWindow extends Component {
@@ -22,8 +23,8 @@ export default class MainWindow extends Component {
 
     render() {
         return <div className="Main-window ">
-            <Clouds day={this.props.day}/>
-            <Sky day={this.props.day}/>
+            <Clouds day={this.props.day} cloudy={this.props.cloudy}/>
+            <Sky day={this.props.day} cloudy={this.props.cloudy}/>
             <Sun day={this.props.day}/>
             <Farm/>
             <Grass/>
@@ -34,6 +35,7 @@ export default class MainWindow extends Component {
             <LandCrossSection/>
             <WaterPump/>
             <PumpWater isOn={this.props.waterPump}/>
+            <DarkCloud cloudy={this.props.cloudy}/>
         </div>;
     }
 }

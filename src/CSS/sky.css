@@ -105,3 +105,12 @@
         background: linear-gradient(to bottom, #090401 50%,#4B1D06 100%)
     }
 }
+
+@keyframes cloudy-sky {
+    from{
+        background: linear-gradient(to bottom, #9be2fe 0%,#67d1fb 100%)
+    }
+    to{
+        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    }
+}

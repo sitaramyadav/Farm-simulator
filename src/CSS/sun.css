@@ -1,19 +1,24 @@
 .sun-in {
-     height: 120px;
-     width: 120px;
-     position: absolute;
-     left: 50%;
-     top: 5%;
-     background: #FFEE44;
-     position: absolute;
-     border-radius: 50%;
-     box-shadow: rgba(255, 255, 0, 0.2) 0 0 0 15px;
-     animation-name: move-sun-in;
-     animation-duration: 4s;
-     animation-delay: 3ms;
-     animation-iteration-count: 1;
-     animation-timing-function: linear;
- }
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    position: absolute;
+    border-radius: 50%;
+    /*background: #FFEE44;*/
+    /*box-shadow: rgba(255, 255, 0, 0.2) 0 0 0 15px;*/
+    background:orange;
+    box-shadow: 0 0 80px orange,
+    0 0 60px orange,
+    0 0 200px yellow,
+    inset 0 0 80px yellow;
+    animation-name: move-sun-in;
+    animation-duration: 4s;
+    animation-delay: 3ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
 
 @keyframes move-sun-in {
     from {
@@ -27,7 +32,7 @@
 }
 
 
-.moon-out{
+.moon-out {
     z-index: 0;
     height: 100px;
     width: 100px;
@@ -43,11 +48,11 @@
 }
 
 @keyframes move-moon-out {
-    from{
+    from {
         left: 50%;
         top: 5%;
     }
-    to{
+    to {
         left: 100%;
         top: 100%;
     }

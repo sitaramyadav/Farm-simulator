@@ -1,0 +1,90 @@
+.dark-clouds{
+    position: absolute;
+    padding: 200px 0;
+    top: 0px;
+    left: 30%;
+    animation-name: ease-in-dark-clouds;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+}
+.dark-cloud {
+    z-index: 5;
+    width: 200px;
+    height: 60px;
+    background: #CCCCCC;
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    position: relative;
+    opacity: 50%;
+    -webkit-filter: blur(2px);
+}
+.dark-cloud:before, .dark-cloud:after {
+    content: '';
+    position: absolute;
+    background: #CCCCCC;
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+}
+.dark-cloud:after {
+    opacity: 50%;
+    width: 120px;
+    height: 120px;
+    top: -55px;
+    left: auto;
+    right: 15px;
+}
+
+.dark-cloud-1 {
+    transform: scale(2);
+    top: -110px;
+    left: -420px;
+}
+
+.dark-cloud-2 {
+    top: -150px;
+    left: -90px;
+    transform: scale(2);
+
+}
+.dark-cloud-3 {
+    top: -180px;
+    left: 70px;
+    transform: scale(2);
+
+}
+.dark-cloud-4 {
+    top: -300px;
+    left: 400px;
+    transform: scale(2);
+}
+.dark-cloud-5 {
+    top: -300px;
+    left: 600px;
+    transform: scale(2);
+}
+.dark-cloud-6 {
+    top: -350px;
+    left: 900px;
+    transform: scale(2);
+}
+
+@keyframes ease-in-dark-clouds {
+    from{
+        left:100%;
+    }
+    to{
+        left: 30%;
+    }
+
+}

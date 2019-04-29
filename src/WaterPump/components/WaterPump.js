@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import '../../CSS/landCrossSection.css';
+import '../../CSS/waterPump.css';
 
 
 export class WaterPump extends Component {
