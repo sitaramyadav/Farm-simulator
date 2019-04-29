@@ -7,6 +7,8 @@ export class PumpWater extends Component {
     }
 
     render() {
-        return  this.props.isOn ? <div className='pump-water'> </div> : null;
+        return  <div>
+        {this.props.isOn ? <div className='pump-water'> </div> : null}
+        </div>
     }
 }
