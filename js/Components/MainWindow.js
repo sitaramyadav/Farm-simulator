@@ -32,7 +32,7 @@ export class MainWindow extends Component {
             <Ground moisture={moisture} />
             <Well waterlevel={waterlevel}/>
             <SoilHeap/>
-            <LandCrossSection/>
+            <LandCrossSection moisture={moisture}/>
             <WaterPump />
             <PumpWater isOn={pump}/>
             <DarkCloud cloudy={cloudy}/>

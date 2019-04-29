@@ -1,5 +1,5 @@
 .App {
-    height: 864px;
+    height: 100%;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -8,4 +8,5 @@
     align-items: stretch;
     align-content: flex-start;
     overflow: hidden;
+    position: relative;
 }

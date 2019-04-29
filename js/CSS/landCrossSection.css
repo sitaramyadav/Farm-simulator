@@ -3,7 +3,9 @@
     bottom: 0;
     left: 0;
     width: 77%;
-    height: 15%;
-    background-image: radial-gradient(circle, #cca476, #bb946d, #a98563, #98765a, #866851);
+    height: 20%;
+    background-color: #876f51;
+    background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
     z-index: 151;
+    transition: opacity 0.8s ease;
 }

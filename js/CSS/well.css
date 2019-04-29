@@ -1,6 +1,6 @@
 .well{
     height: 30%; width: 20%;
-    z-index: 13;
+    z-index: 149;
     bottom: 0;
     right: 0;
     position: absolute;
@@ -17,7 +17,7 @@
     text-overflow: ellipsis;
 
     /*background-image: url("https://www.transparenttextures.com/patterns/basketball.png");*/
-    box-shadow: 11px -6px 11px 4px rgba(71,29,29,0.73) inset;
+    box-shadow: 11px -6px 11px 4px #3c3c3c inset;
     /*animation: css-wave 1.15s linear 1.15s infinite alternate;*/
     background:
             linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
@@ -39,5 +39,6 @@
     position: absolute;
     width: 100%;
     background: rgba(117,172,209,100);
+    transition: height 1s linear;
 }
 

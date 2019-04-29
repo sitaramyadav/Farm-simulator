@@ -12,12 +12,12 @@ class App extends Component {
             cloudy: false,
             rainy: false,
             wind: "stable",
-            waterlevel: 70,
+            waterlevel: 80,
             temperature: 0,
             pump: false,
             humidity: 0,
             power: true,
-            moisture: true
+            moisture: 20
         }
         this.update = this.update.bind(this);
         this.updateState = this.updateState.bind(this);

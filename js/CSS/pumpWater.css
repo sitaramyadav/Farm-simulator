@@ -16,8 +16,9 @@
     opacity: 80%;
     bottom: 20%;
     right: 24%;
-    animation: waterDrop 30s linear infinite;
+    animation: waterDrop 45s linear infinite;
     transform: rotate(180deg);
+    
 }
 
 @keyframes waterDrop {
