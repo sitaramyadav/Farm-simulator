@@ -3,7 +3,7 @@ import "../CSS/darkClouds.css";
 
 export class DarkCloud extends Component {
     render() {
-        return this.props.cloudy ? <div className="dark-clouds">
+        return this.props.cloudy && this.props.day ? <div className="dark-clouds">
             <div className="dark-cloud dark-cloud-1"></div>
             <div className="dark-cloud dark-cloud-2"></div>
             <div className="dark-cloud dark-cloud-3"></div>

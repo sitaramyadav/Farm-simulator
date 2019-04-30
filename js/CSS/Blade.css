@@ -12,7 +12,7 @@
   
   @keyframes breeze {
     0%, 100% {
-      transform:auto;
+      transform:inherit;
     }
     50% {
       transform:rotate(5deg);

@@ -3,6 +3,7 @@ import './../CSS/App.css';
 import {MainWindow} from "./MainWindow";
 import {ControlPane} from "./ControlPane";
 import axios from "axios";
+import {ButtonPane} from "./ButtonPane";
 
 class App extends Component {
     constructor(props) {
@@ -58,6 +59,7 @@ class App extends Component {
             <div className="App">
                 <MainWindow state={this.state}/>
                 <ControlPane update={this.update} state={this.state}/>
+                {/*<ButtonPane update={this.update} state={this.state}/>*/}
             </div>
         );
     }

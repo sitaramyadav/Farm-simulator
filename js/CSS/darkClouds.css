@@ -81,10 +81,10 @@
 
 @keyframes ease-in-dark-clouds {
     from{
-        left:100%;
+        transform:translateX(600%);
     }
     to{
-        left: 30%;
+        transform: translateX(10%);
     }
 
 }

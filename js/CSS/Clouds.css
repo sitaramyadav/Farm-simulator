@@ -27,11 +27,7 @@
 	left: 10px;
 	opacity: 80%;
 	border-radius: 100px;
-	-moz-border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-webkit-transform: rotate(30deg);
 	transform: rotate(30deg);
-	-moz-transform: rotate(30deg);
 }
 .cloud:after {
 	opacity: 80%;
@@ -43,75 +39,75 @@
 }
 
 .cloud1 {
-	-webkit-animation: MovingCloud 25s linear infinite;
-	-moz-animation: MovingCloud 25s linear infinite;
-	-o-animation: MovingCloud 25s linear infinite;
+	-webkit-animation: MovingCloud 30s linear infinite;
+	-moz-animation: MovingCloud 30s linear infinite;
+	-o-animation: MovingCloud 30s linear infinite;
+	animation: MovingCloud 30s linear infinite;
+
 }
 
 .cloud2 {
-	left: 200px;
 	-webkit-transform: scale(0.6);
 	-moz-transform: scale(0.6);
 	transform: scale(0.6);
 	opacity: 80%;
-	-webkit-animation: MovingCloud 30s linear infinite;
-	-moz-animation: MovingCloud 30s linear infinite;
-	-o-animation: MovingCloud 30s linear infinite;
+	-webkit-animation: MovingCloud 35s linear infinite;
+	-moz-animation: MovingCloud 35s linear infinite;
+	-o-animation: MovingCloud 35s linear infinite;
 }
 .cloud3 {
-	left: -250px;
-	top: -200px;
+	top: -250px;
 	-webkit-transform: scale(0.8);
 	-moz-transform: scale(0.8);
 	transform: scale(0.8);
 	opacity: 80%;
-	-webkit-animation: MovingCloud 22s linear infinite;
-	-moz-animation: MovingCloud 22s linear infinite;
-	-o-animation: MovingCloud 22s linear infinite;
+	-webkit-animation: MovingCloud 40s linear infinite;
+	-moz-animation: MovingCloud 40s linear infinite;
+	-o-animation: MovingCloud 40s linear infinite;
+
 }
 .cloud4 {
-	left: 470px;
 	top: -250px;
 	-webkit-transform: scale(0.75);
 	-moz-transform: scale(0.75);
 	transform: scale(0.75);
 	opacity: 80%;
-	-webkit-animation: MovingCloud 20s linear infinite;
-	-moz-animation: MovingCloud 20s linear infinite;
-	-o-animation: MovingCloud 20s linear infinite;
+	-webkit-animation: MovingCloud 45s linear infinite;
+	-moz-animation: MovingCloud 45s linear infinite;
+	-o-animation: MovingCloud 45s linear infinite;
 }
 .cloud5 {
-	left: -150px;
 	top: -150px;
 	-webkit-transform: scale(0.8);
 	-moz-transform: scale(0.8);
 	transform: scale(0.8);
 	opacity: 80%;
-	-webkit-animation: MovingCloud 20s linear infinite;
-	-moz-animation: MovingCloud 20s linear infinite;
-	-o-animation: MovingCloud 20s linear infinite;
+	-webkit-animation: MovingCloud 50s linear infinite;
+	-moz-animation: MovingCloud 50s linear infinite;
+	-o-animation: MovingCloud 50s linear infinite;
+	-o-animation-delay: 1s;
 }
 @-webkit-keyframes MovingCloud {
 	0% {
-		margin-left: 900%;
+		transform: translateX(900%);
 	}
 	100% {
-		margin-left: -300%;
+		transform: translateX(-300%);
 	}
 }
 @-moz-keyframes MovingCloud {
 	0% {
-		margin-left: 900%;
+		transform: translateX(900%);
 	}
 	100% {
-		margin-left: -300%;
+		transform: translateX(-300%);
 	}
 }
 @-o-keyframes MovingCloud {
 	0% {
-		margin-left: 900%;
+		transform: translateX(900%);
 	}
 	100% {
-		margin-left: -300%;
+		transform: translateX(-300%);
 	}
 }

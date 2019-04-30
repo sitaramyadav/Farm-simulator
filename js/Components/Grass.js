@@ -1,6 +1,5 @@
 import React, {PureComponent} from 'react';
 import {Blade} from './Blade';
-import "../CSS/Grass";
 
 export class Grass extends PureComponent {
     constructor(props){

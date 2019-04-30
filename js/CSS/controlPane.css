@@ -29,6 +29,10 @@
     
 }
 
+.button-pane{
+    z-index: 10;
+}
+
 .button-on::after {
     background: green
 }
