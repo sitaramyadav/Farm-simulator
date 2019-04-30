@@ -84,7 +84,7 @@
         transform:translateX(600%);
     }
     to{
-        transform: translateX(10%);
+        transform: translateX(0%);
     }
 
 }

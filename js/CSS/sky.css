@@ -5,10 +5,11 @@
     z-index: -1;
     background: linear-gradient(to bottom, #b7eaff 0%,#94dfff 100%);
     animation-name: sunrise;
-    animation-duration: 3s;
-    animation-delay: 1ms;
+    animation-duration: 2s;
+    animation-delay: 3ms;
     animation-iteration-count: 1;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in;
+    transition: background 3s ease;
 }
 
 @keyframes sunrise {
@@ -59,12 +60,16 @@
     width: 100%;
     /*background: #fff url(../images/sky.png) repeat-x top left;*/
     z-index: -1;
-    background: linear-gradient(to bottom, #00000c 80%,#150800 100%);
+
     animation-name: sunset;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-delay: 3ms;
     animation-iteration-count: 1;
     animation-timing-function: linear;
+
+    background: linear-gradient(to bottom, #00000c 80%,#150800 100%);
+
+    transition: background 3s ease;
 }
 
 @keyframes sunset {
@@ -96,7 +101,7 @@
         background: linear-gradient(to bottom, #163C52 0%,#4F4F47 30%,#C5752D 60%,#B7490F 80%, #2F1107 100%)
     }
     90% {
-        background: linear-gradient(to bottom, #071B26 0%,#071B26 30%,#8A3B12 80%,#240E03 100%)
+        background: linear-gradient(to bottom, #071B26 0%,#071B26 30%,#59230B 80%,#240E03 100%)
     }
     95%{
         background: linear-gradient(to bottom, #010A10 30%,#59230B 80%,#2F1107 100%)

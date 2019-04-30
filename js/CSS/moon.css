@@ -9,8 +9,8 @@
     left: 50%;
     z-index: 0;
     animation-name: move-moon-in;
-    animation-duration: 4s;
-    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-timing-function: linear;
 
 }
 
@@ -19,36 +19,40 @@
         transform: translateY(-200%);
     }
     to {
-        transform: translateY(5%);
+        transform: translateY(0%);
     }
 }
 
 
+
+
+.sun-off {
+    left: 50%;
+    top: 5%;
+    opacity: 0;
+    z-index: 0;
+    height: 120px;
+    width: 120px;
+    background: orange;
+    position: absolute;
+    border-radius: 50%;
+
+    box-shadow: 0 0 80px orange,
+    0 0 60px orange,
+    0 0 200px yellow,
+    inset 0 0 80px yellow;
+    animation-name: move-sun-out;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+}
+
 @keyframes move-sun-out {
     from {
-        transform: translateY(5%);
+        transform: translateY(1%);
         opacity: 100;
     }
     to {
         transform: translateY(500%);
         opacity: 0;
     }
-}
-
-.sun-off {
-    z-index: 0;
-    top: 5%;
-    left: 50%;
-    height: 120px;
-    width: 120px;
-    opacity: 0;
-    background: #FFEE44;
-    position: absolute;
-    border-radius: 50%;
-    box-shadow: rgba(255, 255, 0, 0.2) 0 0 0 15px;
-    animation-name: move-sun-out;
-    animation-duration: 4s;
-    animation-delay: 3ms;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
 }

@@ -1,5 +1,14 @@
 
-
+.rain-image {
+    z-index: 6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black url("http://media-s3-us-east-1.ceros.com/ceros-inspire/images/2018/02/20/2212c3e3b0d9b94d8061bae6640689c6/rain-clipart-rain-gif-16.gif") repeat-x;
+    transition: opacity 0.8s ease;
+}
 .drop {
     background:-webkit-gradient(linear,0% 0%,0% 100%, from(rgba(13,52,58,1) ), to(rgba(255,255,255,0.6))  );
     background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(255,255,255,.6) 100%);

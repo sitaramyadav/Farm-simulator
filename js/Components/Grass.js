@@ -9,10 +9,10 @@ export class Grass extends PureComponent {
         }
     }
     render(){
-        return <div className="grass">{
-            this.state.blades.map(count =>{
-                return <Blade key={count}/>
-            })
+        return <div className="grass-image">{
+            // this.state.blades.map(count =>{
+            //     return <Blade key={count}/>
+            // })
         } </div>;
     }
 };
