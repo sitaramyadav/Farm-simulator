@@ -15,6 +15,7 @@ import {PumpWater} from "./PumpWater";
 import {DarkCloud} from "./DarkCloud";
 import {Rain} from "./Rain";
 import {Ground} from "./Ground";
+import {Tree} from "./Tree";
 
 
 export class MainWindow extends Component {
@@ -29,10 +30,13 @@ export class MainWindow extends Component {
             <Clouds day={day} cloudy={cloudy}/>
             <Sky day={day} cloudy={cloudy}/>
             <Sun day={day}/>
+            <Farm/>
+            <Tree/>
+            <Grass />
             <Moon visible={!day}/>
             <DarkCloud cloudy={cloudy} day={day}/>
             <Rain rainy={rainy}/>
-            <div>
+            <div style={{background: 'transparent'}}>
                 <Farm/>
                 <Grass/>
                 <Ground moisture={moisture}/>

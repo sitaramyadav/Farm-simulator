@@ -5,6 +5,6 @@
     position: absolute;
     left: 0;
     bottom: 10%;
-    background: url("https://static.wixstatic.com/media/d55e92_337771a183834c44b015d12b82ad1828~mv2.gif") repeat-x;
+    background: url("../images/grass.gif") repeat-x;
     transition: opacity 0.8s ease;
 }

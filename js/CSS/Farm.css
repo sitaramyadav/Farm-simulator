@@ -5,6 +5,7 @@
     height: 30%;
     position: absolute;
     bottom: 20%;
+    margin-left: 50%;
     background-color:#8FEA7A;
     z-index: 7;
 }

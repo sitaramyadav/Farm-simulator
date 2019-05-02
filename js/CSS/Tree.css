@@ -1,0 +1,10 @@
+.tree {
+  bottom: 30%;
+  display: inherit;
+  background-image: url("../images/tree.gif");
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
+  z-index: 7;
+  position: absolute;
+}

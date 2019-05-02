@@ -5,7 +5,7 @@
     bottom: 0px;
     width: 80%;
     height: 20%;
-    background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+    background-image: url("../images/soilTexture.png");
 }
 
 .wet{
@@ -25,5 +25,5 @@
     width: 77%;
     height: 15%;
     z-index: 200;
-    background: url("https://geology.com/rocks/pictures/conglomerate-close-up.jpg") repeat-x;
+    background: url("../images/rocks.jpg") repeat-x;
 }

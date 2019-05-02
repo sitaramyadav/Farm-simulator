@@ -131,7 +131,7 @@
 	width: 1171px;
 	height: 500px;
 	animation: move-clouds 20s linear infinite;
-	background: url("http://pngimg.com/uploads/cloud/cloud_PNG24.png");
+	background: url("../images/morning_clouds.png");
 	z-index: 2;
 }
 .cloud-delay{
@@ -139,7 +139,7 @@
 	opacity: 0;
 	animation-delay: 7s;
 	width: 1171px;
-	background: url("http://pngimg.com/uploads/cloud/cloud_PNG24.png");
+	background: url("../images/morning_clouds.png");
 }
 
 .cloud-delay-2{
@@ -147,7 +147,7 @@
 	opacity: 0;
 	animation-delay: 14s;
 	width: 1171px;
-	background: url("http://pngimg.com/uploads/cloud/cloud_PNG24.png");
+	background: url("../images/morning_clouds.png");
 }
 
 @keyframes move-clouds {
