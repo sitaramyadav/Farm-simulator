@@ -17,3 +17,13 @@
     background-color: #876f51;
     transition: background-color 4000ms linear;
 }
+
+.bedrock{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 77%;
+    height: 15%;
+    z-index: 200;
+    background: url("https://geology.com/rocks/pictures/conglomerate-close-up.jpg") repeat-x;
+}

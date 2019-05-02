@@ -6,14 +6,15 @@ import { Grass } from "./Grass";
 import {Moon} from "./Moon";
 import {Sun} from "./Sun";
 import {Clouds} from "./Clouds";
-import {Ground} from "./Ground";
+import {Bedrock} from "./Bedrock";
 import {Well} from "./Well";
-import {SoilHeap} from "./SoilHeap";
+import {VerticalWall} from "./VerticalWall";
 import {LandCrossSection} from "./LandCrossSection";
 import {WaterPump} from "./WaterPump";
 import {PumpWater} from "./PumpWater";
 import {DarkCloud} from "./DarkCloud";
 import {Rain} from "./Rain";
+import {Ground} from "./Ground";
 
 
 export class MainWindow extends Component {
@@ -28,17 +29,20 @@ export class MainWindow extends Component {
             <Clouds day={day} cloudy={cloudy}/>
             <Sky day={day} cloudy={cloudy}/>
             <Sun day={day}/>
-            <Farm/>
-            <Grass />
             <Moon visible={!day}/>
-            <Ground moisture={moisture} />
-            <Well waterlevel={waterlevel}/>
-            <SoilHeap/>
-            <LandCrossSection moisture={moisture}/>
-            <WaterPump />
-            <PumpWater isOn={pump}/>
             <DarkCloud cloudy={cloudy} day={day}/>
             <Rain rainy={rainy}/>
+            <div>
+                <Farm/>
+                <Grass/>
+                <Ground moisture={moisture}/>
+                <Bedrock/>
+                <Well waterlevel={waterlevel}/>
+                <VerticalWall/>
+                <LandCrossSection moisture={moisture}/>
+                <WaterPump/>
+                <PumpWater isOn={pump}/>
+            </div>
         </div>;
     }
 }

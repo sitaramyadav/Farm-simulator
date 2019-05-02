@@ -5,7 +5,7 @@ import {Button} from "./Button";
 export class ButtonPane extends Component {
     render() {
         let {cloudy, day, moisture, pump,rainy} = this.props.state;
-        return <div className="Button-pane">
+        return <div className="Button-pane" style={{"position": "absolute"}}>
             <Button name='day' update={this.props.update} toggle={day}/>
             <Button name='moisture' update={this.props.update} toggle={moisture}/>
             <Button name='pump' update={this.props.update} toggle={pump}/>

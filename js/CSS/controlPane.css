@@ -4,10 +4,11 @@
     margin-left: 84%;
     margin-top: 10px;
     width: 14%;
-    z-index: 10;
+    z-index: 350;
     padding: 10px;
     border-radius: 5%;
     text-align: left;
+    opacity: 0.9;
 
 }
 

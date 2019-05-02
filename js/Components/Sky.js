@@ -12,7 +12,9 @@ export class Sky extends Component {
         const night_sky = {
             "background": "#010A10"
         };
+        const night_sky_container = this.props.day ? null : <div className="night-sky-image" />;
         const style = this.props.day ? (this.props.cloudy ? cloudyStyle : sky) : night_sky;
-            return <div className={this.props.day ? 'sky' : 'night-sky'} style={style}/>;
+            return <div>{night_sky_container}
+            <div className={this.props.day ? 'sky' : 'night-sky'} style={style}/></div>;
     }
 }

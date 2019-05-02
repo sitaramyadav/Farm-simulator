@@ -3,12 +3,12 @@ import "../CSS/Clouds.css";
 
 export class Clouds extends Component {
     render() {
-        return this.props.day && !this.props.cloudy ? <div className="morning_clouds">
-        <div className="cloud cloud1"></div>
-        <div className="cloud cloud2"></div>
-        <div className="cloud cloud3"></div>
-        <div className="cloud cloud4"></div>
-        <div className="cloud cloud5"></div>
+        const opacity = this.props.cloudy && this.props.day ? 0.5 : 0;
+        return this.props.day ? <div>
+            <div className="dark-cloudy" style={{opacity:opacity}}/>
+            <div className="cloud-image"/>
+            <div className="cloud-image cloud-delay"/>
+            <div className="cloud-image cloud-delay-2"/>
     </div> : null
     };
 }

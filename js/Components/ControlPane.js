@@ -1,5 +1,4 @@
 import React, {PureComponent} from "react";
-import '../CSS/controlPane.css'
 import {Button} from "./Button";
 
 export class ControlPane extends PureComponent {

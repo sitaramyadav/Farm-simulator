@@ -54,6 +54,20 @@
     background: #00000c;
 }
 
+.night-sky-image {
+    background: url("https://steamuserimages-a.akamaihd.net/ugc/772778501267616228/943896502CE7357163BDEF5F6ACDFD24DB3D2015/") repeat;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    animation-name: night-stary-sky;
+    animation-duration: 2s;
+    animation-delay: 3ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
 
 .night-sky{
     height: 80%;
@@ -70,6 +84,15 @@
     background: linear-gradient(to bottom, #00000c 80%,#150800 100%);
 
     transition: background 3s ease;
+}
+
+@keyframes night-stary-sky {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
 }
 
 @keyframes sunset {

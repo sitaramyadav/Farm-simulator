@@ -1,12 +1,10 @@
 .heap{
     z-index: 150;
-    /*border-top-left-radius: 100%;*/
     position: absolute;
     height: 31%;
     width: 3%;
     bottom: 0%;
     right: 20%;
-    /*background: #876f51 url(https://www.transparenttextures.com/patterns/basketball.png);*/
     background:
             linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
             linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,

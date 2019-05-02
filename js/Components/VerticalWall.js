@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 
-import '../CSS/soilHeap.css'
-export class SoilHeap extends Component {
+import '../CSS/verticalWall.css'
+export class VerticalWall extends Component {
     render(){
         return <div className='heap' />;
     }
