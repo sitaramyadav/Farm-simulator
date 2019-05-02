@@ -1,0 +1,11 @@
+.home {
+    position: absolute;
+    bottom: 40%;
+    left: 60%;
+    height: 22%;
+    width: 22%;
+    background-image: url("../images/home.png");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    z-index: 7;
+}

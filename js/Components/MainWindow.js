@@ -16,6 +16,7 @@ import {DarkCloud} from "./DarkCloud";
 import {Rain} from "./Rain";
 import {Ground} from "./Ground";
 import {Tree} from "./Tree";
+import {Home} from "./Home";
 
 
 export class MainWindow extends Component {
@@ -32,6 +33,7 @@ export class MainWindow extends Component {
             <Sun day={day}/>
             <Farm/>
             <Tree/>
+            <Home/>
             <Grass />
             <Moon visible={!day}/>
             <DarkCloud cloudy={cloudy} day={day}/>
