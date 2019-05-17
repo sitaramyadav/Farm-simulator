@@ -59,7 +59,7 @@ class App extends Component {
             <div className="App">
                 <MainWindow state={this.state}/>
                 <ControlPane update={this.update} state={this.state}/>
-                {/*<ButtonPane update={this.update} state={this.state}/>*/}
+                <ButtonPane update={this.update} state={this.state}/>
             </div>
         );
     }

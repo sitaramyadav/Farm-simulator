@@ -5,10 +5,12 @@ export class Button extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            toggle: props.toggle
+            toggle: props.toggle,
+            name: props.name
 
         };
         this.updateButtonState =this.updateButtonState.bind(this)
+        console.log("Text here ", this.state.name);
     }
 
     updateButtonState() {
@@ -16,7 +18,7 @@ export class Button extends React.Component {
     }
 
     render() {
-        return <button onClick={this.updateButtonState} className={this.props.toggle ? "button-on" : "button-off"}>{this.props.text}</button>;
+        return <button onClick={this.updateButtonState} className={this.props.toggle ? "button-on" : "button-off"}>{this.state.name}</button>;
     }
 
 }
