@@ -12,7 +12,7 @@ export class ControlPane extends PureComponent {
     }
 
     triggerPump() {
-        axios.post(`http://localhost:5000/trigger/PUMP/${!this.state.value}`)
+        axios.post(`https://iucaa.herokuapp.com/:5000/trigger/PUMP/${!this.state.value}`)
             .then(function (response) {
                 console.log(response);
             }).catch(function (error) {

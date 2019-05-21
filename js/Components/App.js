@@ -38,7 +38,7 @@ class App extends Component {
     }
 
     poll() {
-        axios.get('http://localhost:5000/'+'stats')
+        axios.get('https://iucaa.herokuapp.com//'+'stats')
             .then(this.updateState)
             .catch(function (error) {
                 console.log(error);

@@ -39,10 +39,8 @@ module.exports =  {
     },
     devServer: {
         port: 3000,
-        host: "0.0.0.0",
         hot: true,
         inline: true,
-        disableHostCheck: true,
         historyApiFallback: true,
         headers: {
           "Access-Control-Allow-Origin": "*",
